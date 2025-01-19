@@ -1,0 +1,23 @@
+#container{
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+h1, h2, h3, h4{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: #FADADD; 
+    color: #5C5C5C;
+    border: 1px solid #D6A800;
+    padding: 10px;
+}
+a{
+    color: #F5A9BC;
+    text-decoration: none;
+}
+a:hover {
+    color: #430a1a;
+
+  }
+a:visited{
+    color: #C78B9B;
+}
