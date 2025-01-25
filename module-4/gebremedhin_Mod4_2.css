@@ -1,0 +1,57 @@
+h1{
+    text-align: center;
+}
+h3{
+    text-align: center;
+}
+#container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+#image-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 10%;
+  }
+  .gallery-item {
+    border: 1px solid rgba(204, 85, 0, 0.5);
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #fff;
+  }
+  
+  figure {
+    text-align: center;
+  }
+  
+  figure img {
+    width: 120px;
+    height: auto;
+    margin: 10px 0;
+  }
+  
+  figcaption {
+    font-style: italic;
+    font-size: 0.75em;
+    color: rgba(165, 84, 125, 0.887); 
+  }
+  
+  a {
+    display: inline-block;
+    margin-top: 20px;
+    color: rgb(170, 21, 21); 
+    text-decoration: none;
+    text-align: right;
+    
+  }
+  #bottom{
+    margin-bottom: 20px;
+    margin-top: 60px;
+    width: 100%;
+    text-align: right;
+}
+  
+  a:hover {
+    text-decoration: underline;
+  }
