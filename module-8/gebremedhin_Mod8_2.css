@@ -1,0 +1,95 @@
+/* 
+Nardos Gebremedhin
+Module 8
+02/7/2025
+     */
+header{
+    background-color: pink;
+    color:rgba(255, 255, 255, 0.902);
+    padding: 20px;
+    text-align: center;
+}
+h1{
+    font-weight: 400;
+}
+#navbar{
+   overflow: hidden;
+   background-color: pink;
+   border-bottom: solid 15px rgb(208, 203, 203);
+}
+#navbar a{
+    float: left;
+    display: block;
+    color:#ffc1cc;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+#navbar a:hover {
+    background-color: #666;
+    color: #ffffff;
+}
+#container{
+    margin-top: 2%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 100px;
+    padding: 10px;
+}
+.card{
+    box-shadow: 0 4px 8px 0 and an rgba(0, 0, 0, 0.2) ;
+    transition: 0.3s;
+    width: 50%;
+    
+}
+.card-title{
+    text-align: center;
+    font-size: 2em;
+    color: pink;
+    font-weight: 400;
+}
+
+#movies{
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 30px;
+}
+#movies th{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+}
+#movies td{
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+.card-content{
+    padding: 2px 16px ;
+}
+.card:hover{
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+footer{
+    position: fixed;
+    bottom: 10px;
+    left: 0;
+    width: 100%;
+    background-color: rgba(240, 203, 209, 0.854);
+    color: white;
+    padding: 10px;
+    text-align: left;
+    font-style: italic;
+    font-weight: 400;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+footer a{
+    text-decoration: none;
+    color:white;
+}
+footer a:hover{
+    text-decoration: underline
+}
