@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <!--
+      Nardos Gebremedhin
+      Module 10.3
+      -->
+    <title>CSD 340 Web Development with HTML and CSS</title>
+    <script>
+        function changeImage(imageFile){
+          var mainImage = document.getElementById("mainImage");
+          mainImage.src = imageFile;
+        }
+      </script>
+      <link rel='stylesheet' type='text/css' href='body1.css' />
+</head>
+<body>
+    <h1> Assignment 10.3: JavaScript - Part 2 </h1>
+    <br />
+    <div>
+      <img id="mainImage" src="img/mainPose.jpg" alt="Hello Kitty" style="width:300px; height:200px; border:2px solid pink;" />
+    </div>
+    <br />
+    <a href="#" onclick="changeImage('img/pose1.jpg');">
+        <img src="img/pose1.jpg" alt="Kitty Image 1" style="width:100px; height:75px; border:1px solid pink;">
+      </a>
+      <a href="#" onclick="changeImage('img/pose2.jpg');">
+        <img src="img/pose2.jpg" alt="Kitty Image 2" style="width:100px; height:75px; border:1px solid pink;">
+      </a>
+    </div>
+    <br />
+    <div onmouseover="this.style.color='hotpink';" onmouseout="this.style.color='black';">
+      Click an image to change the display &#x2661
+    </div>
+</body>
+</html>
