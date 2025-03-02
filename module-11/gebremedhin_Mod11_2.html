@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <!--
+      Nardos Gebremedhin
+      Module 11.2
+      -->
+    <title>CSD 340 Web Development with HTML and CSS</title>
+    <script>
+        // array to store the items
+        let List = [];
+
+        // adding input values to an array and displays an alert
+        function addItem(){
+            let input = document.getElementById("itemInput").value;
+            if(input){
+                List.push(input);
+                alert(`Item: ${input} Added as Item ${List.length}`);
+                document.getElementById("itemInput").value = "";
+            }else {
+                alert("Please enter a value before adding!!");
+            }
+        }
+
+        // removing the last entry from the array
+        function deleteLastItem() {
+            if (List.length > 0) {
+                let removedItem = List.pop();
+                alert(`Removed: ${removedItem}`);
+            } else {
+                alert("No items to remove.");
+            }
+        }
+        // displays the array with numbered entries
+        function displayItems() {
+            let displayArea = document.getElementById("displayArea");
+            displayArea.innerHTML = "";
+            if (List.length > 0) {
+                List.forEach((item, index) => {
+                    displayArea.innerHTML += `${index + 1}. ${item}<br>`;
+                });
+            } else {
+                displayArea.innerHTML = "No items in the list.";
+            }
+        }
+
+    </script>
+</head>
+<body>
+    <h1> Assignment 11.2: JavaScript - Part 3 </h1>
+    <br/>
+    <input type="text" id="itemInput" placeholder="Enter item"> 
+    <button onclick="addItem()">Add</button>
+    <button onclick="deleteLastItem()">Delete Last Entry</button>
+    <button onclick="displayItems()">Display</button>
+    <p id="displayArea"></p>
+</body>
+</html>
