@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSD 340 Web Development with HTML and CSS</title>
+    <link href="gebremedhin_Mod12_2.css" type="text/css" rel="stylesheet" >
+    <script>
+        // Array of top 10 favorite books
+        let books = [
+            "A Little Life",
+            "The Body Keeps the Score",
+            "Final Offer",
+            "When I Think of You",
+            "Terms and Conditions",
+            "Flipped",
+            "Seven Year Slip",
+            "As Long as the Lemon Trees Grow",
+            "Love on the Brain",
+            "The Love Hypothesis"
+        ];
+        
+        function displayBooks(order) {
+            let bookList = document.getElementById("bookList");
+            bookList.innerHTML = ""; 
+            
+            let sortedBooks = order === 'asc' ? books.slice().sort() : books.slice().sort().reverse();
+            
+            sortedBooks.forEach(book => {
+                let li = document.createElement("li");
+                li.textContent = book;
+                bookList.appendChild(li);
+            });
+        }
+    </script>
+</head>
+<body>
+<div id="container">
+    <h1> Assignment 12.2: JavaScript - Part 4 </h1>
+    <div id="side-by-side">
+        <!-- left side of list-->
+        <div id="left">
+            <h3> Top 10 Favorite Books </h3>
+            <ol id="bookList">
+                <li> A little life </li>
+                <li> The body keeps the score </li>
+                <li> Final Offer </li>
+                <li> When I think of You </li>
+                <li> Terms and Conditions </li>
+                <li> Flipped </li>
+                <li> Seven Year Slip </li>
+                <li> As Long as the Lemon Trees Grow </li>
+                <li> Love on the Brain </li>
+                <li> The Love Hypothesis </li>
+            </ol>
+            <button onclick="displayBooks('asc')">Top to Bottom</button>
+            <button onclick="displayBooks('desc')">Bottom to Top</button>
+        </div>
+
+<!-- right side of list-->
+        <div id="right">
+            <h3> 5 Things I’ve Learned Since the Course Started </h3>
+            <ul>
+                <li>HTML Basic Structures </li>
+                <li>Differnt css styling </li>
+                <li>How to link websites and imgs</li>
+                <li>Learning a lot about memories and the human brain</li>
+                <li>How people read and retain information </li>
+            </ul>
+        </div>
+    </div>
+<!-- bottom side of list-->
+        <div id="bottom">
+            <a href="../index.html"> Return to Landing Page</a>
+        </div>
+</div>
+</body>
+</html>
